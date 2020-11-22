@@ -18,7 +18,7 @@ android:configChanges="keyboardHidden|orientation|screenSize"
 https://cdn.xtsmm.com/android/libraries/WebPlayer.aar
 
 
-2 - Update app build gradle to add
+2 - Update Project gradle
 ```
 flatDir {
   dirs 'libs'
@@ -36,7 +36,7 @@ allprojects {
 }
 ```
 
-3 - Add Depedency from Lib Folder
+3 - Add Depedency at App gradle
 
 ```
 dependencies {
