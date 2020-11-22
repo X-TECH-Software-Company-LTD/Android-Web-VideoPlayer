@@ -14,9 +14,9 @@ android:configChanges="keyboardHidden|orientation|screenSize"
 ## Import Library to Gradle
 
 1 - Download WebPlayer.arr and place inside "projectName/app/libs" folder .
-```
+
 https://cdn.xtsmm.com/android/libraries/WebPlayer.aar
-```
+
 
 2 - Update app build gradle to add
 ```
