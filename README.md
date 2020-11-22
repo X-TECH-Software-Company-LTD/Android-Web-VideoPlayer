@@ -15,3 +15,13 @@ dependencies {
     ...
     }
 ```
+
+## Usage
+
+new WebPlayer(activity).play(url_to_play,background_Image);
+above code will get a return of webview
+###### null background Image will got default Background.
+
+```
+setContentView(new WebPlayer(this).play("https://content.jwplatform.com/manifests/yp34SRmf.m3u8","https://cdn57.androidauthority.net/wp-content/uploads/2015/11/00-best-backgrounds-and-wallpaper-apps-for-android.jpg"));
+```
