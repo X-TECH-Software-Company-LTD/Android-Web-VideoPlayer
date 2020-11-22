@@ -1,24 +1,51 @@
 # Android-Web-VideoPlayer
 play video on android using web native library
 
+### requirements
 ```
-1 - require android:configChanges to prevent screen rotate restarts
-2 - require Manifest Internet Permission
-3 - require requestWindowFeature(Window.FEATURE_NO_TITLE); getSupportActionBar().hide();
-4 - using clapper js
+1 - Add Internet Permission to Application Manifest
+<uses-permission android:name="android.permission.INTERNET" />
+
+2 - Add configChanges to Application Manifest to prevent activity restart on Orientation Change
+android:configChanges="keyboardHidden|orientation|screenSize"
+
 ```
 
 ## Import Library to Gradle
+
+1 - Download WebPlayer.arr and place inside "projectName/app/libs" folder .
+
+2 - Update app build gradle to add
+```
+flatDir {
+  dirs 'libs'
+}
+```
+```
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+```
+
+3 - Add Depedency from Lib Folder
+
 ```
 dependencies {
-    implementation project(path: ':Web Player')
-    ...
-    }
+    implementation(name:'WebPlayer', ext:'aar')
+    //other repositories
+}
 ```
 
 ## Usage
-
+```
 new WebPlayer(activity).play(url_to_play,background_Image);
+```
 above code will get a return of webview
 ###### null background Image will got default Background.
 
