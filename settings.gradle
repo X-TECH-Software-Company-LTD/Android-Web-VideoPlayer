@@ -1,0 +1,3 @@
+include ':Web Player'
+include ':app'
+rootProject.name = "Android Web Player"
