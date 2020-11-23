@@ -1,12 +1,9 @@
 # Android-Web-VideoPlayer
 play video on android using web native library
 
-### requirements
+### optional requirements
 ```
-1 - Add Internet Permission to Application Manifest
-<uses-permission android:name="android.permission.INTERNET" />
-
-2 - Add configChanges property to Activity Manifest to prevent activity restart on Orientation Change
+- Add configChanges property to Activity Manifest to prevent activity restart on Orientation Change
 android:configChanges="keyboardHidden|orientation|screenSize"
 
 ```
